@@ -1,0 +1,222 @@
+
+body{
+    overflow-x: hidden;
+}
+
+.nav-link {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 60px;
+    /* identical to box height, or 333% */
+    
+    text-align: center;
+}
+
+.active a{
+    color: #219ebc !important;
+    text-decoration: underline;
+}
+
+#header{
+    background-image: url('../img/header/header_partnership.png');
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 281px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header h1{
+
+    font-family: Eras Demi ITC;
+    font-style: Bold;
+    font-weight: 600;
+    font-size: 53px;
+    line-height: 61px;
+    letter-spacing: -0.025em;
+    
+    color: #FFFFFF;
+    margin-top: 5%;
+}
+
+
+
+#supplier{
+    max-width: 100%;
+}
+
+#supplier .row{
+    padding-top:4%;
+    padding-bottom:4%;
+}
+
+#supplier h1{
+    font-family: Poppins;
+    font-style: Bolder;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FB8500;
+    margin-left:10%;
+}
+
+#supplier .paragraph{
+    text-indent: 8%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    /* or 24px */
+    
+    text-align: justify;
+    width:80%;
+    margin:0 auto;
+/* or 24px */
+}
+
+
+#supplier img{
+    margin-top:6%;
+}
+
+
+.gray-bg{
+    background: rgba(66, 122, 161, 0.1);
+    box-shadow: 8px 5px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    width:95vw;
+    margin: auto;
+}
+
+#investor{
+    margin-bottom: 7%;
+}
+
+
+#investor .content{
+    padding: 4% 6% 4% 6%;
+}
+#investor .content h1{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+
+color: #FB8500;
+}
+
+#investor .content img{
+    margin-top:10%;
+}
+
+#investor .content p{
+font-family: Poppins;
+text-indent: 8%;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 120%;
+/* or 24px */
+
+text-align: justify;
+
+color: #000000;
+
+opacity: 0.7;
+}
+
+
+.quote{
+    margin-bottom: 3%;
+}
+
+
+
+
+
+footer{
+    background-image: url('../img/footer/partnership.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+}
+
+footer .content{
+    margin:0 auto;
+    width:50%;
+
+}
+footer h3, footer p{
+    font-family: Segoe UI;
+    font-style: normal;
+    color: #FFFFFF;
+    
+}
+
+footer p{
+    font-size: 18px;
+}
+
+#left-footer{
+    
+}
+#left-footer h3{
+    text-decoration-line: underline;
+
+}
+
+footer h3{
+font-weight: 900;
+font-size: 18px;
+line-height: 149.8%;
+/* identical to box height, or 27px */
+}
+
+footer p{
+font-size: 18px;
+line-height: 107%;
+width:24.472243940578576vw;
+}
+
+#right-footer{
+    padding-top:7%;
+
+}
+
+ .link{
+    color:white;
+    text-decoration: underline;
+}
+
+.media-section{
+width:50%;
+
+}
+
+.media-section .row:nth-child(1){
+    margin-bottom: 5%;
+}
+
+#right-footer img{
+    width:34px;
+    height: 34px;
+
+}
+
+.footnote{
+    color:white;
+    margin: auto;
+    margin-top:3%;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}

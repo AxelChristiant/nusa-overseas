@@ -1,0 +1,222 @@
+
+body {
+overflow-x: hidden;
+font-family: Poppins;
+
+}
+
+.nav-link {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 60px;
+    /* identical to box height, or 333% */
+    
+    text-align: center;
+}
+
+.active a{
+    color: #219ebc !important;
+    text-decoration: underline;
+}
+#header{
+  background-image: url('../img/header/header_landing.png');
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 92vh; /* You must set a specified height */
+  max-width: 100%;
+  background-position: right center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+#principles{
+    background-color:rgb(66, 122, 161,0.05);
+    width:95vw;
+    border-radius: 30px;
+    margin-left: 10vw;
+    margin: auto;
+}
+#principles .row{
+padding:5%;
+}
+
+.principles-1 img{
+    height:25vh;
+    margin-bottom:3%;
+}
+
+#principles p{
+    text-align: justify;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+#header button{
+    margin-top:4%;
+    background-color: #FB8500 ;
+    color: white;
+
+}
+
+.header-text h1{
+    color:white;
+    font-size: 4vw;
+}
+.header-text h2{
+    color:white;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    margin-top:2%;
+}
+.header-text{
+    margin-top:6%;
+}
+.header-text h3{
+    margin-top:4%;
+    font-weight: lighter;
+    color:white;
+    font-size: 1.8vw;
+    word-spacing: 0.5vw;
+    text-align: justify;
+    width:50%;
+}
+
+.card{
+    float: none;
+    width:20rem;
+    height:100%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+
+
+#top-products{
+    padding:4%;
+}
+
+#top-products hr{
+    background:#FB8500;
+    width:60vw;
+    margin-bottom:5%;
+}
+#top-products button{
+margin-top:10vh;
+}
+.card-title{
+    color: #FB8500;
+}
+.section-header{
+    color:#FB8500;
+    /* font-weight: lighter; */
+}
+#principles h1{
+    margin-top:5%;
+    margin-bottom:4%;
+}
+.principle-title{
+    
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: bold;
+text-align:left;        
+font-size: 27px;
+line-height: 120%;
+/* or 23px */
+
+
+color: #FB8500;
+
+opacity: 0.7;
+}
+
+footer{
+    background-image: url('../img/footer/halaman_utama.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+}
+
+footer .content{
+    margin:0 auto;
+    width:50%;
+
+}
+footer h3, footer p{
+    font-family: Segoe UI;
+    font-style: normal;
+    color: #FFFFFF;
+    
+}
+
+footer p{
+    font-size: 18px;
+}
+
+#left-footer{
+    
+}
+#left-footer h3{
+    text-decoration-line: underline;
+
+}
+
+footer h3{
+font-weight: 900;
+font-size: 18px;
+line-height: 149.8%;
+/* identical to box height, or 27px */
+}
+
+footer p{
+font-size: 18px;
+line-height: 107%;
+width:24.472243940578576vw;
+}
+
+#right-footer{
+    padding-top:7%;
+
+}
+
+ .link{
+    color:white;
+    text-decoration: underline;
+}
+
+.media-section{
+width:50%;
+
+}
+
+.media-section .row:nth-child(1){
+    margin-bottom: 5%;
+}
+
+#right-footer img{
+    width:34px;
+    height: 34px;
+
+}
+
+.footnote{
+    color:white;
+    margin: auto;
+    margin-top:3%;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+

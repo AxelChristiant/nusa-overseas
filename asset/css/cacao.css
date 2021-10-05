@@ -1,0 +1,338 @@
+
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.nav-link {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 60px;
+    /* identical to box height, or 333% */
+    
+    text-align: center;
+}
+
+.active a{
+    color: #A05C37 !important;
+    text-decoration: underline;
+}
+
+#bg-1, #bg-2, #bg-3, #bg-4, #bg-5{
+    position: absolute;
+    z-index: -1;
+
+}
+
+#bg-1{
+width: 516px;
+height: 392px;
+
+right: 0;
+top: 1103px;
+
+}
+#bg-2{
+width: 516px;
+height: 392px;
+left: 0;
+top: 503px;
+}
+
+#bg-3{
+    width: 212px;
+    height: 168px;
+    left: 0;
+    top: 343px;
+}
+
+#bg-4{
+    position: absolute;
+width: 368px;
+height: 202px;
+left: 546px;
+top: 880px;
+}
+#bg-5{
+    position: absolute;
+width: 451px;
+height: 283px;
+right:0;
+top: 511px;
+}
+#bg-6{
+    position: absolute;
+    width: 343px;
+    height: 295px;
+    left: 37px;
+    top: 1230px;
+}
+
+#header{
+    background-image: url('../img/header/header_cacao.png');
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 281px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header h1{
+
+    font-family: Eras Demi ITC;
+    font-style: Bold;
+    font-weight: 600;
+    font-size: 53px;
+    line-height: 61px;
+    letter-spacing: -0.025em;
+    
+    color: #FFFFFF;
+    margin-top: 5%;
+}
+
+#products .card{
+    float: none;
+    width:20rem;
+    height:100%;
+    margin: 0 auto;
+}
+#products .card-img-top{
+    padding:2%;
+    max-width: 100%;
+}
+
+#products .card-title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+/* identical to box height, or 90% */
+
+
+color: #FB8500;
+
+}
+
+#products .card-text{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 120%;
+/* or 22px */
+
+text-align: justify;
+
+color: #000000;
+
+}
+
+#products .col-lg-4{
+    margin:5% 0 5% 0;
+}
+
+
+
+#products h1{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+line-height: 60px;
+/* identical to box height */
+
+
+color: #FB8500;
+}
+
+#products .card{
+    border: 4px solid #FB8500;
+box-sizing: border-box;
+border-radius: 25px;
+}
+
+#products .last-card{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 74px;
+line-height: 120%;
+/* or 89px */
+
+text-align: justify;
+margin:auto;
+
+color: #FB8500;
+}
+
+
+.card{
+    opacity: 0.7;
+}
+.card:hover{
+    cursor:pointer;
+    opacity: 1;
+}
+
+
+.modal .modal-content{
+    background-color:#ECF2F6;
+}
+
+.modal .close{
+    text-align: right;
+}
+.modal .close img{
+    padding:5px;
+}
+.modal .modal-content .row{
+    padding:30px;
+}
+.modal .modal-content .row img{
+    max-width: 100%;
+}
+
+.modal .modal-content  h1, .modal .modal-content .row p{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+
+}
+
+.modal .alert{
+    color: #FF0606;
+    margin-top:2%;
+    font-size: 12px;
+    font-weight: bolder;
+    padding:2%;
+    border: 3px solid #219EBC;
+}
+
+.modal .modal-content  h1{
+font-size: 39px;
+line-height: 48px;
+/* identical to box height, or 120% */
+
+
+}
+.modal .product-title, .modal .gallery h1{
+    color: #FB8500;
+}
+
+.modal .modal-content p{
+    font-size: 20px;
+line-height: 120%;
+/* or 24px */
+
+text-align: justify
+}
+
+.modal .spesification{
+    width:100%;
+}
+
+.modal .spesification{
+    color:white;
+    background-color:#FB8500;
+}
+
+.modal .contact{
+    color:white;
+    background-color: #31393C;
+}
+.modal .contact h4{
+    margin-top:5%;
+}
+.modal .contact .content{
+    width:70%;
+    margin:auto;
+}
+.modal .contact img{
+    min-width:35px;
+    height: auto;
+}
+
+.modal .gallery img{
+    margin-bottom: 2%;
+}
+
+
+footer{
+    background-image: url('../img/footer/cacao_footer.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+}
+
+footer .content{
+    margin:0 auto;
+    width:50%;
+
+}
+footer h3, footer p{
+    font-family: Segoe UI;
+    font-style: normal;
+    color: #FFFFFF;
+    
+}
+
+footer p{
+    font-size: 18px;
+}
+
+#left-footer h3{
+    text-decoration-line: underline;
+
+}
+
+footer h3{
+font-weight: 900;
+font-size: 18px;
+line-height: 149.8%;
+/* identical to box height, or 27px */
+}
+
+footer p{
+font-size: 18px;
+line-height: 107%;
+width:24.472243940578576vw;
+}
+
+#right-footer{
+    padding-top:7%;
+
+}
+
+ .link{
+    color:white;
+    text-decoration: underline;
+}
+
+.media-section{
+width:50%;
+
+}
+
+.media-section .row:nth-child(1){
+    margin-bottom: 5%;
+}
+
+#right-footer img{
+    width:34px;
+    height: 34px;
+
+}
+
+.footnote{
+    color:white;
+    margin: auto;
+    margin-top:3%;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
