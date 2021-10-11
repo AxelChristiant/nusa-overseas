@@ -1,14 +1,20 @@
-<html>
-    
+<html>    
 <head>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href='./asset/css/cacao.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link rel="stylesheet" href='./asset/css/cacao.css'>
+  <link rel="stylesheet" href='./asset/css/footer.css'>
+  <link rel="stylesheet" href='./asset/css/nav.css'>
 </head>
 
-<body>
+<body class="fade-in">
 
   <!-- Background image -->
   <img src="./asset/img/background/1.png" id="bg-1">
@@ -26,21 +32,21 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse"  id="navbarNav">
-        <ul class="navbar-nav ml-auto" >
+          <ul class="navbar-nav ml-auto" >
             <li class="nav-item">
             <a class="nav-link" href="landing.html">Home</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item  active">
             <a class="nav-link" href="products.html">Product</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="partnership.html">Partnership</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
             </li>
         </ul>
         </div>
@@ -130,13 +136,12 @@
   </div>
 
 
-  
-  <footer class="row " >
+  <footer id="footer" >
     <div class="row content">
       <div class="col-md-6" id="left-footer" >
         <img src="./asset/img/footer/logo.png" alt="">
         <br>
-        <h3>Office Address</h3>
+        <h3>Address</h3>
         <p>
           Jl. Kaliurang Km 14, Gang Banteng No. 4. Rt:04/Rw:06 Tegalsari, Kab Sleman, D.I.Yogyakarta, Indonesia.
         </p>
@@ -155,22 +160,22 @@
         <div class="link">About Us</div>
         <div class="link">Product</div>
         <div class="link">Partnership</div>
-        <h3>Media</h3>
-        <p></p>
+        
         <div class="media-section">
+          <h3>Media</h3>
           <div class="row">
-            <div class=" col-sm-3"><img src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
-            <div class="  col-sm-3"><img  src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
-            <div class="col-sm-3"><img  src="./asset/img/footer/gmail.png" alt="GMAIL"></div>
-            <div class=" col-sm-3"><img src="./asset/img/footer/wechat.png" alt="WECHAT"></div>
+            <div class="col-4"><img src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
+            <div class="col-4"><img src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
+            <div class="col-4"><img src="./asset/img/footer/gmail.png" alt="GMAIL"></div>
           </div>
           <div class="row">
-            <div class="col-sm-3"><img  src="./asset/img/footer/instagram.png" alt="WECHAT"></div>
-            <div class="col-sm-3"><img  src="./asset/img/footer/facebook.png" alt="WHATSAPP"></div>
+            <div class="col-4"><img src="./asset/img/footer/wechat.png" alt="WECHAT"></div>
+            <div class="col-4"><img src="./asset/img/footer/instagram.png" alt="WECHAT"></div>
+            <div class="col-4"><img src="./asset/img/footer/facebook.png" alt="WHATSAPP"></div>
           </div>
         </div>
       </div>
-      <p class="footnote">©2021 Copyright Nusa Overseas</p>
+      <span class="footnote">©2021 Copyright Nusa Overseas</span>
     </div>
 
 
@@ -231,7 +236,7 @@
               <span>nusaoverseaS@gmail.com</span>
             </div>
             <div class="col-xl-6">
-              <h4 class="text-center">Contact Us</h4>
+              <h4>Contact Us</h4>
               <div class="row">
                 <div class="col-3"><img class="img-fluid" src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
                 <div class="col-3"><img  src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
@@ -318,7 +323,7 @@
               <span>nusaoverseaS@gmail.com</span>
             </div>
             <div class="col-xl-6">
-              <h4 class="text-center">Contact Us</h4>
+              <h4>Contact Us</h4>
               <div class="row">
                 <div class="col-3"><img class="img-fluid" src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
                 <div class="col-3"><img  src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
@@ -405,7 +410,7 @@
               <span>nusaoverseaS@gmail.com</span>
             </div>
             <div class="col-xl-6">
-              <h4 class="text-center">Contact Us</h4>
+              <h4>Contact Us</h4>
               <div class="row">
                 <div class="col-3"><img class="img-fluid" src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
                 <div class="col-3"><img  src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
@@ -495,7 +500,7 @@
               <span>nusaoverseaS@gmail.com</span>
             </div>
             <div class="col-xl-6">
-              <h4 class="text-center">Contact Us</h4>
+              <h4>Contact Us</h4>
               <div class="row">
                 <div class="col-3"><img class="img-fluid" src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
                 <div class="col-3"><img  src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
@@ -583,7 +588,7 @@
               <span>nusaoverseaS@gmail.com</span>
             </div>
             <div class="col-xl-6">
-              <h4 class="text-center">Contact Us</h4>
+              <h4>Contact Us</h4>
               <div class="row">
                 <div class="col-3"><img class="img-fluid" src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
                 <div class="col-3"><img  src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>

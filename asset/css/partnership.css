@@ -3,21 +3,21 @@ body{
     overflow-x: hidden;
 }
 
-.nav-link {
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 60px;
-    /* identical to box height, or 333% */
-    
-    text-align: center;
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
 }
 
-.active a{
-    color: #219ebc !important;
-    text-decoration: underline;
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 #header{
@@ -73,7 +73,7 @@ header h1{
     /* or 24px */
     
     text-align: justify;
-    width:80%;
+    width:90%;
     margin:0 auto;
 /* or 24px */
 }
@@ -81,6 +81,7 @@ header h1{
 
 #supplier img{
     margin-top:6%;
+    max-width: 100%;
 }
 
 
@@ -93,7 +94,7 @@ header h1{
 }
 
 #investor{
-    margin-bottom: 7%;
+    margin-bottom: 4%;
 }
 
 
@@ -114,6 +115,7 @@ color: #FB8500;
 
 #investor .content img{
     margin-top:10%;
+    max-width: 100%;
 }
 
 #investor .content p{
@@ -134,6 +136,11 @@ opacity: 0.7;
 
 
 .quote{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 31px;
+    line-height: 46px;
     margin-bottom: 3%;
 }
 
@@ -143,80 +150,28 @@ opacity: 0.7;
 
 footer{
     background-image: url('../img/footer/partnership.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-    
 }
 
-footer .content{
-    margin:0 auto;
-    width:50%;
+@media screen and (max-width: 768px) {
+    .header-text h3{
+        font-size:3vw;
+    }
+    .navbar-brand img{
+        width:50vw;
+    }
+    #principles .button{
+        margin-bottom:5%;
+    }
+    .header-text{
+        margin-top:0;
+    }
+    .media-section img {
+        padding:5px;
 
-}
-footer h3, footer p{
-    font-family: Segoe UI;
-    font-style: normal;
-    color: #FFFFFF;
-    
-}
+    }
 
-footer p{
-    font-size: 18px;
-}
+  }
 
-#left-footer{
-    
-}
-#left-footer h3{
-    text-decoration-line: underline;
 
-}
 
-footer h3{
-font-weight: 900;
-font-size: 18px;
-line-height: 149.8%;
-/* identical to box height, or 27px */
-}
 
-footer p{
-font-size: 18px;
-line-height: 107%;
-width:24.472243940578576vw;
-}
-
-#right-footer{
-    padding-top:7%;
-
-}
-
- .link{
-    color:white;
-    text-decoration: underline;
-}
-
-.media-section{
-width:50%;
-
-}
-
-.media-section .row:nth-child(1){
-    margin-bottom: 5%;
-}
-
-#right-footer img{
-    width:34px;
-    height: 34px;
-
-}
-
-.footnote{
-    color:white;
-    margin: auto;
-    margin-top:3%;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-}

@@ -1,0 +1,89 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.active a {
+  color: #219ebc !important;
+  text-decoration: underline;
+}
+
+
+.contact-popup{
+  position: absolute;
+  right:0px;
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  top:50px;
+
+}
+.email,.phone{
+  display: inline-block;
+}
+#popup-contact{
+  visibility: hidden;
+}
+
+.contact-popup .popuptext {
+  background-color:white;
+  padding:10px 10px 20px 26px;
+  color:black;
+  border: 3px solid #fb8500;
+  border-radius: 20px;;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px; 
+}
+
+
+.social-media-section{
+  text-align: center;
+  display:grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 45px;
+  margin-top:4%;
+  margin-left:4%;
+  gap: 0;
+}
+.social-media-section img{
+  width: 35px;
+  height: 35px;
+}
+.show {
+  visibility: visible;
+}
+
+.icon-email, .icon-phone{
+  width: 20px;
+  height: 20px;
+  margin-right:8px;
+}
+
+.contact-item .social-media-section{
+  justify-content: center;
+  
+}
+
+.contact-item .phone{
+  letter-spacing: 4px;
+}
+
+.contact-item{display:none;}
+
+
+
+
+
+
+
+

@@ -1,266 +1,226 @@
-body{
-    overflow-x: hidden;
-    font-family: Poppins;
+body {
+  overflow-x: hidden;
+  margin: 0;
 }
 
-
-.nav-link {
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 60px;
-    /* identical to box height, or 333% */
-    
-    text-align: center;
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
 }
 
-.active a{
-    color: #219ebc !important;
-    text-decoration: underline;
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-#header{
-    background-image: url('../img/header/header_aboutus.png');
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size:cover;
-}
-
-header h1{
-
-font-family: Eras Demi ITC;
-font-style: normal;
-font-weight: 600;
-font-size: 53px;
-line-height: 61px;
-letter-spacing: -0.025em;
-
-color: #FFFFFF;
-    margin-top: 5%;
-}
-#story{
-    max-width: 100%;
+#header {
+  background-image: url("../img/header/header_aboutus.png");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: 281px;
 }
 
-#story h1{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 60px;
-/* identical to box height */
-margin-top:2%;
-margin-bottom:4%;
-
-
-color: #FB8500;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+header h1 {
+  font-family: Eras Demi ITC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 53px;
+  line-height: 61px;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  margin-top: 5%;
 }
 
-#story .paragraph{
-    text-indent: 8%;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 180%;
-    width:80%;
-/* or 24px */
-
-    text-align: justify;
-    mix-blend-mode: normal;
-    opacity: 0.7;
+#story h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 60px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  color: #fb8500;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.gray-bg{
-    background: rgba(66, 122, 161, 0.1);
-    box-shadow: 8px 5px 6px rgba(0, 0, 0, 0.15);
-    border-radius: 25px;
-    width:95vw;
-    margin: auto;
+#story .paragraph {
+  text-indent: 8%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  width: 80%;
+  text-align: justify;
+  mix-blend-mode: normal;
+  opacity: 0.7;
 }
 
-
-#vision .content{
-    padding: 4% 6% 4% 6%;
-}
-#vision .content h1{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 60px;
-/* identical to box height */
-
-
-color: #FB8500;
+#story img {
+  max-width: 100%;
 }
 
-#vision .content p{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 23px;
-line-height: 120%;
-/* or 24px */
-
-text-align: justify;
-
-color: #000000;
-
-opacity: 0.7;
+#story .col-sm-5{
+  text-align: right;
 }
 
-
-#goals{
-    width:60vw;
-    margin: auto;
-    margin-bottom:5%;
-    margin-top:5%;
+.gray-bg {
+  background: rgba(66, 122, 161, 0.1);
+  box-shadow: 8px 5px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  width: 95vw;
+  margin: auto;
 }
 
-#goals h1{
-    margin-left:6%;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 60px;
-
-    color: #FB8500;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+#vision .content {
+  padding: 4% 6% 4% 6%;
+}
+#vision .content h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 60px;
+  color: #fb8500;
 }
 
-#goals li{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 120%;
-/* or 24px */
+#vision .content p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 120%;
+  text-align: justify;
+  color: #000000;
+  opacity: 0.7;
+}
 
-text-align: justify;
+#goals {
+  width: 60vw;
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
 
-color: #000000;
+#goals h1 {
+  margin-left: 6%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 60px;
+  color: #fb8500;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-opacity: 0.7;
+#goals li {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: justify;
+  color: #000000;
+  opacity: 0.7;
 }
 
 #our-company {
-    margin-bottom:5%;
+  margin-bottom: 5%;
 }
 
-#our-company .content{
-    padding: 4% 20% 4% 20%;
-
+#our-company .content {
+  padding: 4% 20% 4% 20%;
 }
-#our-company .content h1{
-    font-family: Poppins;
-font-style: normal;
-font-weight: bolder;
-font-size: 40px;
-line-height: 48px;
-/* identical to box height, or 120% */
-margin-bottom:5%;
-
-text-align: center;
-
-color: #FB8500;
+#our-company .content h1 {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #fb8500;
 }
 
-#our-company .content p{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 48px;
-/* or 240% */
-
-text-align: justify;
-
-color: #000000;
+#our-company .content p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 48px;
+  text-align: justify;
+  color: #000000;
 }
-
-
 
 /*footer*/
 
-
-
-footer{
-    background-image: url('../img/footer/about_footer.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-    
+footer {
+  background-image: url("../img/footer/about_footer.png");
 }
 
-footer .content{
-    margin:0 auto;
-    width:50%;
-}
-footer h3, footer p{
-    font-family: Segoe UI;
-    font-style: normal;
-    color: #FFFFFF;
-    
-}
+@media screen and (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar-brand img {
+    width: 60vw;
+  }
+  #story .col-sm-5 img{
+    margin-left:5%;
 
-#left-footer h3{
-    text-decoration-line: underline;
-
-}
-
-footer h3{
-font-weight: 900;
-font-size: 18px;
-line-height: 149.8%;
-/* identical to box height, or 27px */
-}
-
-footer p{
-font-size: 18px;
-line-height: 107%;
-width:24.472243940578576vw;
+  }
+  #story .col-sm-7 p{
+    margin-left:10%;
+  }
+  #our-company .content p{
+    font-size: 17px;
+    line-height: 30px;
+  }
+  #vision{
+    margin-bottom:30%;
+  }
 }
 
-#right-footer{
-    padding-top:6%;
+@media screen and (max-width: 1024px) {
+  #left-footer h3,
+  #right-footer h3 {
+    font-size: 15px;
+  }
+  #left-footer p,
+  #right-footer .link {
+    font-size: 10px;
+    line-height: 107%;
+  }
+  .footnote {
+    font-size: 13px;
 
+  }
 }
 
- .link{
-    color:white;
-    text-decoration: underline;
+
+@media screen and (max-width: 768px) {
+  #left-footer h3,
+  #right-footer h3 {
+    font-size: 15px;
+  }
+  #left-footer p,
+  #right-footer .link {
+    font-size: 10px;
+    line-height: 107%;
+  }
+  #left-footer img {
+    width: 264px;
+  }
+  .footnote {
+    font-size: 10px;
+  }
+
+  .media-section img {
+    padding: 5px;
+  }
 }
-
-.media-section{
-width:50%;
-
-}
-
-.media-section .row:nth-child(1){
-    margin-bottom: 5%;
-}
-
-#right-footer img{
-    width:34px;
-    height: 34px;
-
-}
-
-.footnote{
-    color:white;
-    margin: auto;
-    margin-top:3%;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-}
-

@@ -1,13 +1,22 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="./asset/js/nav.js"></script>
         <link rel="stylesheet" href='./asset/css/landing.css'>
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href='./asset/css/footer.css'>
+        <link rel="stylesheet" href='./asset/css/nav.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
     </head>
-
+    <body class="fade-in">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"><img src="./asset/img/footer/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,10 +37,47 @@
                 <a class="nav-link" href="partnership.html">Partnership</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" id="contact-button" href="#footer">Contact</a>
                 </li>
+
+                <li class="nav-item contact-item text-center">
+                  <div class="row email"><img src="./asset/img/icon/mail.png" class="icon-email">nusaoveseas@gmail.com</div>
+                </li>
+                <li class="nav-item contact-item text-center">
+                  <div class="row phone" ><img src="./asset/img/icon/phone.png" class="icon-phone">+6285155020500</div>
+                </li>
+                <li class="nav-item contact-item">
+                  <div class="social-media-section">
+                      <div class="grid-item"><img src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
+                      <div class="grid-item"><img src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
+                      <div class="grid-item"><img src="./asset/img/footer/gmail.png" alt="GMAIL"></div>
+                      <div class="grid-item"><img src="./asset/img/footer/wechat.png" alt="WECHAT"></div>
+                      <div class="grid-item"><img src="./asset/img/footer/instagram.png" alt="WECHAT"></div>
+                      <div class="grid-item"><img src="./asset/img/footer/facebook.png" alt="WHATSAPP"></div>
+                  </div>
+
+                </li>
+
             </ul>
             </div>
+            <div class="contact-popup container-fluid" id="popup-contact">
+              <div class="popuptext">
+                <div class="row phone"><img src="./asset/img/icon/phone.png" class="icon-phone">+6285155020500</div>    
+                <div class="row email"><img src="./asset/img/icon/mail.png" class="icon-email">nusaoveseas@gmail.com</div>
+                
+                <div class="social-media-section">
+                    <div class="grid-item"><img src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
+                    <div class="grid-item"><img src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
+                    <div class="grid-item"><img src="./asset/img/footer/gmail.png" alt="GMAIL"></div>
+                    <div class="grid-item"><img src="./asset/img/footer/wechat.png" alt="WECHAT"></div>
+                    <div class="grid-item"><img src="./asset/img/footer/instagram.png" alt="WECHAT"></div>
+                    <div class="grid-item"><img src="./asset/img/footer/facebook.png" alt="WHATSAPP"></div>
+                </div>
+
+
+              </div>
+            </div>
+
         </nav>
 
       <header>
@@ -43,7 +89,7 @@
                         We are engaged in agricultural industry where we always provide the best service and quality with competitive price to fulfill the demands of the world market.
                     </h3>
                 </div>
-                <button>
+                <button class="btn">
                     <strong>See Products</strong>
                 </button>
 
@@ -54,40 +100,35 @@
           <h1 class="text-center section-header">Our Top Products</h1>
           <hr/>
           <div class="row">
-              <div class="col-lg-4 col-centered" >
-                <div class="card">
+              <div class="col-4" >
+                <div class="product-section">
                     <img class="card-img-top" src="./asset/img/top-products/black pepper.jpg" alt="Card image cap">
-                    <div class="card-body">
                       <h4 class="card-title">Black Pepper</h4>
                       <p class="card-text">
                         Black pepper is a berries of the pepper plant. It is made by cooking the dried unripe fruit. Black pepper has spicy tast
                       </p>
-                    </div>
-                  </div>
+                </div>
               </div>
-              <div class="col-lg-4 col-centered">
-                <div class="card">
+              <div class="col-4">
+                  <div class="product-section">
                     <img class="card-img-top" src="./asset/img/top-products/palm sugar.jpg" alt="Card image cap">
-                    <div class="card-body">
                       <h4 class="card-title">Palm Sugar</h4>
                       <p class="card-text">
                         Palm sugar is a sweetener that is made from the sap present in the flower buds of the coconut palm.
                       </p>
                     </div>
-                  </div>
               </div>
-              <div class="col-lg-4">
-                <div class="card">
+              <div class="col-4">
+                  <div class="product-section">
                     <img class="card-img-top" src="./asset/img/top-products/white pepper.jpg"" alt="Card image cap">
-                    <div class="card-body">
+                    
                         <h4 class="card-title">White Pepper</h4>
                       <p class="card-text">
                         White pepper is a berries of the pepper plant. 
                         It is made by cooking and drying the ripe seeds. 
                         White pepper has mild taste. 
                       </p>
-                    </div>
-                  </div>
+                   </div>
              </div>
           </div>   
 
@@ -99,28 +140,28 @@
       <div  id="principles">
         <h1 class="text-center section-header">Our Principles</h1>
         <div class="row text-center principles-1">
-          <div class="col-xl-3">
+          <div class="col-lg-3">
             <img  src="./asset/img/principles/Integrity.png"  alt="Card image cap">
             <p>We are treating every costumer with fairness and respect. 
               We always make sure the products that sent to our customers have the same quality 
               and detail according to the orders.
             </p>
           </div>
-          <div class="col-xl-3">
+          <div class="col-lg-3">
             <img  src="./asset/img/principles/Innovation.png"  alt="Card image cap">
             <p>
               we always learning and 
               improving the quality of various aspects of our company in order to adapt on every situation.
             </p>
           </div>
-          <div class="col-xl-3">
+          <div class="col-lg-3">
             <img  src="./asset/img/principles/best price.png"  alt="Card image cap">
             <p>
               We are producer and first hand supplier. Our company collaborates directly 
               with farmers or factories that what makes us able to provide the best price and quality.
             </p>
           </div>
-          <div class="col-xl-3">
+          <div class="col-lg-3">
             <img  src="./asset/img/principles/Commitment.png"  alt="Card image cap">
             <p>
               Our company have been committed to always providing the best for our customers and investors. Of course by keeping our clients trust, we are expecting a deeper relation.
@@ -128,7 +169,7 @@
           </div>
         </div>
 
-        <div class="row text-center">
+        <div class="row principles-2">
           <div class="col-lg-4">
               <img  src="./asset/img/principles/visit.png"  alt="Card image cap">
               <h2 class="principle-title">Visit Nusa Overseas</h2>
@@ -143,34 +184,36 @@
               <img  src="./asset/img/principles/investor.png"  alt="Card image cap">
               <h2 class="principle-title">Nusa Overseas and Investor</h2>
               <p>
-                Our company have been committed to always providing the best for our customers and investors. Of course by keeping our clients trust, we are expecting a deeper relation.
+                We have developed strategies to grow our company and make it sustainable in global market. We have opportunity because indonesia have so many resource that makes us believe Nusa Overseas have very good potential to grow bigger. If you want to be investro for our company please check our partnership page.
               </p>
               <button class="button btn-primary">
                 <strong>Partnership</strong>
               </button>
           </div>
           <div class="col-lg-4">
+           
               <img  src="./asset/img/principles/contribution.png"  alt="Card image cap">
               <h2 class="principle-title">Nusa Overseas Contribution</h2>
               <p>
-                Our company have been committed to always providing the best for our customers and investors. Of course by keeping our clients trust, we are expecting a deeper relation.
+                As we say in “cemmitment”. Our company believe business is not just making money but also improving relationship. So many farmer, supplier, manufacture, and people working with us, they are the reason why our company stand for. We trying to reach and help to improve their life. Join with us. By joining us you can also participate in improving the lives of people around you
               </p>
               <button class="button btn-primary">
                 <strong>Partnership</strong>
-            </button>
-          </div>
+              </button>
+          
 
           
-        </div>
+          </div>
+      </div>
       </div>
 
       
-      <footer class="row " >
+      <footer id="footer">
         <div class="row content">
           <div class="col-md-6" id="left-footer" >
             <img src="./asset/img/footer/logo.png" alt="">
             <br>
-            <h3>Office Address</h3>
+            <h3>Address</h3>
             <p>
               Jl. Kaliurang Km 14, Gang Banteng No. 4. Rt:04/Rw:06 Tegalsari, Kab Sleman, D.I.Yogyakarta, Indonesia.
             </p>
@@ -189,26 +232,27 @@
             <div class="link">About Us</div>
             <div class="link">Product</div>
             <div class="link">Partnership</div>
-            <h3>Media</h3>
-            <p></p>
+            
             <div class="media-section">
+              <h3>Media</h3>
               <div class="row">
-                <div class=" col-sm-3"><img src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
-                <div class="  col-sm-3"><img  src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
-                <div class="col-sm-3"><img  src="./asset/img/footer/gmail.png" alt="GMAIL"></div>
-                <div class=" col-sm-3"><img src="./asset/img/footer/wechat.png" alt="WECHAT"></div>
+                <div class="col-4"><img src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
+                <div class="col-4"><img src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
+                <div class="col-4"><img src="./asset/img/footer/gmail.png" alt="GMAIL"></div>
               </div>
               <div class="row">
-                <div class="col-sm-3"><img  src="./asset/img/footer/instagram.png" alt="WECHAT"></div>
-                <div class="col-sm-3"><img  src="./asset/img/footer/facebook.png" alt="WHATSAPP"></div>
+                <div class="col-4"><img src="./asset/img/footer/wechat.png" alt="WECHAT"></div>
+                <div class="col-4"><img src="./asset/img/footer/instagram.png" alt="WECHAT"></div>
+                <div class="col-4"><img src="./asset/img/footer/facebook.png" alt="WHATSAPP"></div>
               </div>
             </div>
           </div>
-          <p class="footnote">©2021 Copyright Nusa Overseas</p>
+          <span class="footnote">©2021 Copyright Nusa Overseas</span>
         </div>
 
 
       </footer>
+    </body>
 
 
 </html>

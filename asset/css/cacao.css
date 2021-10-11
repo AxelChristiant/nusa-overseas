@@ -1,338 +1,279 @@
-
-body{
-    overflow-x: hidden;
-    max-width: 100%;
+body {
+  overflow-x: hidden;
 }
 
-.nav-link {
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 60px;
-    /* identical to box height, or 333% */
-    
-    text-align: center;
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
 }
 
-.active a{
-    color: #A05C37 !important;
-    text-decoration: underline;
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
-#bg-1, #bg-2, #bg-3, #bg-4, #bg-5{
-    position: absolute;
-    z-index: -1;
-
+#bg-1,
+#bg-2,
+#bg-3,
+#bg-4,
+#bg-5 {
+  position: absolute;
+  z-index: -1;
 }
 
-#bg-1{
-width: 516px;
-height: 392px;
+#bg-1 {
+  width: 516px;
+  height: 392px;
 
-right: 0;
-top: 1103px;
-
+  right: 0;
+  top: 1103px;
 }
-#bg-2{
-width: 516px;
-height: 392px;
-left: 0;
-top: 503px;
-}
-
-#bg-3{
-    width: 212px;
-    height: 168px;
-    left: 0;
-    top: 343px;
+#bg-2 {
+  width: 516px;
+  height: 392px;
+  left: 0;
+  top: 503px;
 }
 
-#bg-4{
-    position: absolute;
-width: 368px;
-height: 202px;
-left: 546px;
-top: 880px;
-}
-#bg-5{
-    position: absolute;
-width: 451px;
-height: 283px;
-right:0;
-top: 511px;
-}
-#bg-6{
-    position: absolute;
-    width: 343px;
-    height: 295px;
-    left: 37px;
-    top: 1230px;
+#bg-3 {
+  width: 212px;
+  height: 168px;
+  left: 0;
+  top: 343px;
 }
 
-#header{
-    background-image: url('../img/header/header_cacao.png');
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 281px;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+#bg-4 {
+  position: absolute;
+  width: 368px;
+  height: 202px;
+  left: 546px;
+  top: 880px;
+}
+#bg-5 {
+  position: absolute;
+  width: 451px;
+  height: 283px;
+  right: 0;
+  top: 511px;
+}
+#bg-6 {
+  position: absolute;
+  width: 343px;
+  height: 295px;
+  left: 37px;
+  top: 1230px;
 }
 
-header h1{
-
-    font-family: Eras Demi ITC;
-    font-style: Bold;
-    font-weight: 600;
-    font-size: 53px;
-    line-height: 61px;
-    letter-spacing: -0.025em;
-    
-    color: #FFFFFF;
-    margin-top: 5%;
+#header {
+  background-image: url("../img/header/header_cacao.png");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 281px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-#products .card{
-    float: none;
-    width:20rem;
-    height:100%;
-    margin: 0 auto;
-}
-#products .card-img-top{
-    padding:2%;
-    max-width: 100%;
-}
+header h1 {
+  font-family: Eras Demi ITC;
+  font-style: Bold;
+  font-weight: 600;
+  font-size: 53px;
+  line-height: 61px;
+  letter-spacing: -0.025em;
 
-#products .card-title{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 18px;
-/* identical to box height, or 90% */
-
-
-color: #FB8500;
-
+  color: #ffffff;
+  margin-top: 5%;
 }
 
-#products .card-text{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 120%;
-/* or 22px */
-
-text-align: justify;
-
-color: #000000;
-
+#products .card {
+  float: none;
+  width: 20rem;
+  max-width: 100%;
+  height: 100%;
+  min-height: 384px;
+  margin: 0 auto;
+  border: 4px solid #fb8500;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+#products .card-img-top {
+  padding: 2%;
+  max-width: 100%;
 }
 
-#products .col-lg-4{
-    margin:5% 0 5% 0;
+#products .card-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  /* identical to box height, or 90% */
+
+  color: #fb8500;
 }
 
+#products .card-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  /* or 22px */
 
+  text-align: justify;
 
-#products h1{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-line-height: 60px;
-/* identical to box height */
-
-
-color: #FB8500;
+  color: #000000;
 }
 
-#products .card{
-    border: 4px solid #FB8500;
-box-sizing: border-box;
-border-radius: 25px;
+#products .col-lg-4 {
+  margin: 5% 0 5% 0;
 }
 
-#products .last-card{
-    font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 74px;
-line-height: 120%;
-/* or 89px */
+#products h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 60px;
+  /* identical to box height */
 
-text-align: justify;
-margin:auto;
-
-color: #FB8500;
+  color: #fb8500;
 }
 
+#products .last-card {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 74px;
+  line-height: 120%;
+  /* or 89px */
 
-.card{
-    opacity: 0.7;
-}
-.card:hover{
-    cursor:pointer;
-    opacity: 1;
-}
+  text-align: justify;
+  margin: auto;
 
-
-.modal .modal-content{
-    background-color:#ECF2F6;
-}
-
-.modal .close{
-    text-align: right;
-}
-.modal .close img{
-    padding:5px;
-}
-.modal .modal-content .row{
-    padding:30px;
-}
-.modal .modal-content .row img{
-    max-width: 100%;
+  color: #fb8500;
 }
 
-.modal .modal-content  h1, .modal .modal-content .row p{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-
+.card {
+  opacity: 0.7;
+}
+.card:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
-.modal .alert{
-    color: #FF0606;
-    margin-top:2%;
-    font-size: 12px;
-    font-weight: bolder;
-    padding:2%;
-    border: 3px solid #219EBC;
+.modal .modal-content {
+  background-color: #ecf2f6;
 }
 
-.modal .modal-content  h1{
-font-size: 39px;
-line-height: 48px;
-/* identical to box height, or 120% */
-
-
+.modal .close {
+  text-align: right;
 }
-.modal .product-title, .modal .gallery h1{
-    color: #FB8500;
+.modal .close img {
+  padding: 5px;
 }
-
-.modal .modal-content p{
-    font-size: 20px;
-line-height: 120%;
-/* or 24px */
-
-text-align: justify
+.modal .modal-content .row {
+  padding: 30px;
+}
+.modal .modal-content .row img {
+  max-width: 100%;
 }
 
-.modal .spesification{
-    width:100%;
+.modal .modal-content h1,
+.modal .modal-content .row p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.modal .spesification{
-    color:white;
-    background-color:#FB8500;
+.modal .alert {
+  color: #ff0606;
+  margin-top: 2%;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 2%;
+  border: 3px solid #219ebc;
 }
 
-.modal .contact{
-    color:white;
-    background-color: #31393C;
+.modal .modal-content h1 {
+  font-size: 39px;
+  line-height: 48px;
+  /* identical to box height, or 120% */
 }
-.modal .contact h4{
-    margin-top:5%;
-}
-.modal .contact .content{
-    width:70%;
-    margin:auto;
-}
-.modal .contact img{
-    min-width:35px;
-    height: auto;
+.modal .product-title,
+.modal .gallery h1 {
+  color: #fb8500;
 }
 
-.modal .gallery img{
-    margin-bottom: 2%;
+.modal .modal-content p {
+  font-size: 20px;
+  line-height: 120%;
+  /* or 24px */
+
+  text-align: justify;
 }
 
-
-footer{
-    background-image: url('../img/footer/cacao_footer.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-    
+.modal .spesification {
+  width: 100%;
 }
 
-footer .content{
-    margin:0 auto;
-    width:50%;
-
-}
-footer h3, footer p{
-    font-family: Segoe UI;
-    font-style: normal;
-    color: #FFFFFF;
-    
+.modal .spesification {
+  color: white;
+  background-color: #fb8500;
 }
 
-footer p{
-    font-size: 18px;
+.modal .spesification img{
+  margin-bottom: 7%;
 }
 
-#left-footer h3{
-    text-decoration-line: underline;
+.modal .contact {
+  color: white;
+  background-color: #31393c;
+}
+.modal .contact h4 {
+  margin-top: 5%;
+}
+.modal .contact .content {
+  width: 70%;
+  margin: auto;
+}
+.modal .contact .row img {
+  min-width: 30px;
+  padding: 3px;
+}
+
+.modal .gallery img {
+  margin-bottom: 2%;
+}
+
+footer {
+  background-image: url("../img/footer/cacao_footer.png");
+}
+
+@media screen and (max-width:425px){
+  .modal .alert{
+    font-size: 9px;
+  }
 
 }
 
-footer h3{
-font-weight: 900;
-font-size: 18px;
-line-height: 149.8%;
-/* identical to box height, or 27px */
-}
-
-footer p{
-font-size: 18px;
-line-height: 107%;
-width:24.472243940578576vw;
-}
-
-#right-footer{
-    padding-top:7%;
-
-}
-
- .link{
-    color:white;
-    text-decoration: underline;
-}
-
-.media-section{
-width:50%;
-
-}
-
-.media-section .row:nth-child(1){
+@media screen and (max-width: 768px) {
+  .header-text h3 {
+    font-size: 3vw;
+  }
+  .navbar-brand img {
+    width: 50vw;
+  }
+  #principles .button {
     margin-bottom: 5%;
-}
-
-#right-footer img{
-    width:34px;
-    height: 34px;
-
-}
-
-.footnote{
-    color:white;
-    margin: auto;
-    margin-top:3%;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
+  }
+  .header-text {
+    margin-top: 0;
+  }
 }

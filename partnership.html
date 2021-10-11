@@ -1,8 +1,20 @@
 <html>
   <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='./asset/css/partnership.css'>
+    <link rel="stylesheet" href='./asset/css/footer.css'>
+    <link rel="stylesheet" href='./asset/css/nav.css'>
+    <script src="./asset/js/nav.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
   </head>
+  <body class="fade-in">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="./asset/img/footer/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +35,24 @@
             <a class="nav-link" href="partnership.html">Partnership</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item contact-item text-center">
+              <div class="row email"><img src="./asset/img/icon/mail.png" class="icon-email">nusaoveseas@gmail.com</div>
+            </li>
+            <li class="nav-item contact-item text-center">
+              <div class="row phone" ><img src="./asset/img/icon/phone.png" class="icon-phone">+6285155020500</div>
+            </li>
+            <li class="nav-item contact-item">
+              <div class="social-media-section">
+                  <div class="grid-item"><img src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
+                  <div class="grid-item"><img src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
+                  <div class="grid-item"><img src="./asset/img/footer/gmail.png" alt="GMAIL"></div>
+                  <div class="grid-item"><img src="./asset/img/footer/wechat.png" alt="WECHAT"></div>
+                  <div class="grid-item"><img src="./asset/img/footer/instagram.png" alt="WECHAT"></div>
+                  <div class="grid-item"><img src="./asset/img/footer/facebook.png" alt="WHATSAPP"></div>
+              </div>
+
             </li>
         </ul>
         </div>
@@ -32,8 +61,8 @@
 
     <header>
         <div class="p-5 bg-image" id="header">
-            <div class="text-center">
-                <h1>Partnership</h1>
+            <div >
+                <h1 class="text-center">Partnership</h1>
             </div>
 
         </div>
@@ -46,7 +75,7 @@
               <img src="asset/img/partnership/supplier.png">
           </div>
           <div class="col-md-6" >
-              <h1>Supplier</h1>
+              <h1 class="text-center">Supplier</h1>
               <p class="paragraph"> <b>Nusa Overseas opens an opportunity for you to join us to improving your economy 
                   and the people around you.</b>
               </p>
@@ -69,11 +98,11 @@
       </div>
 
 
-      <div id="investor" class="gray-bg">
+       <div id="investor" class="gray-bg">
         <div class="content">
           <div class="row">
              <div class="col-md-6">
-              <h1>Investor</h1>
+              <h1 class="text-center">Investor</h1>
                <p>   Nusa Overseas is a company engaged in the field of agricultural products. In running this business we learned a lot to be better. There are various obstacles for our company to grow and we are trying to overcome.  We always try to give our customers the best quality and price, to ensure that we have to manufacture our products from scratch. We collect raw goods directly from farmers and process them directly. 
                  We will not gonna lie if this production process involves a lot of people 
                  and requires a lot of money.</p>
@@ -93,13 +122,13 @@
              </div>
           </div>
         </div>
-    </div>
+    </div> 
 
 
-    <h2 class="text-center quote"> “We prioritize trust and professionalism to running our bussiness” </h2>
+  <h2 class="text-center quote"> “We prioritize trust and professionalism to running our bussiness” </h2>
 
 
-    <footer class="row " >
+    <footer class="row" id="footer" >
         <div class="row content">
           <div class="col-md-6" id="left-footer" >
             <img src="./asset/img/footer/logo.png" alt="">
@@ -123,25 +152,25 @@
             <div class="link">About Us</div>
             <div class="link">Product</div>
             <div class="link">Partnership</div>
-            <h3>Media</h3>
-            <p></p>
             <div class="media-section">
+              <h3>Media</h3>
               <div class="row">
-                <div class=" col-sm-3"><img src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
-                <div class="  col-sm-3"><img  src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
-                <div class="col-sm-3"><img  src="./asset/img/footer/gmail.png" alt="GMAIL"></div>
-                <div class=" col-sm-3"><img src="./asset/img/footer/wechat.png" alt="WECHAT"></div>
+                <div class="col-4"><img src="./asset/img/footer/whatsapp.png" alt="WHATSAPP"></div>
+                <div class="col-4"><img src="./asset/img/footer/telegram.png" alt="TELEGRAM"></div>
+                <div class="col-4"><img src="./asset/img/footer/gmail.png" alt="GMAIL"></div>
               </div>
               <div class="row">
-                <div class="col-sm-3"><img  src="./asset/img/footer/instagram.png" alt="WECHAT"></div>
-                <div class="col-sm-3"><img  src="./asset/img/footer/facebook.png" alt="WHATSAPP"></div>
+                <div class="col-4"><img src="./asset/img/footer/wechat.png" alt="WECHAT"></div>
+                <div class="col-4"><img src="./asset/img/footer/instagram.png" alt="WECHAT"></div>
+                <div class="col-4"><img src="./asset/img/footer/facebook.png" alt="WHATSAPP"></div>
               </div>
             </div>
           </div>
-          <p class="footnote">©2021 Copyright Nusa Overseas</p>
+          <span class="footnote">©2021 Copyright Nusa Overseas</span>
         </div>
 
 
       </footer>
+      </body>
 
 </html>

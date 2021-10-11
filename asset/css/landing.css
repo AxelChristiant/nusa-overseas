@@ -1,222 +1,238 @@
-
 body {
-overflow-x: hidden;
-font-family: Poppins;
-
+  overflow-x: hidden;
 }
 
-.nav-link {
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 60px;
-    /* identical to box height, or 333% */
-    
-    text-align: center;
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
 }
 
-.active a{
-    color: #219ebc !important;
-    text-decoration: underline;
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-#header{
-  background-image: url('../img/header/header_landing.png');
+
+#header {
+  background-image: url("../img/header/header_landing.png");
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 92vh; /* You must set a specified height */
   max-width: 100%;
   background-position: right center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-
 }
 
-#principles{
-    background-color:rgb(66, 122, 161,0.05);
-    width:95vw;
-    border-radius: 30px;
-    margin-left: 10vw;
-    margin: auto;
+#principles {
+  background: rgba(66, 122, 161, 0.1);
+  width: 95vw;
+  border-radius: 30px;
+  margin-left: 10vw;
+  margin: auto;
+  margin-bottom: 5%;
 }
-#principles .row{
-padding:5%;
-}
-
-.principles-1 img{
-    height:25vh;
-    margin-bottom:3%;
+#principles .row {
+  padding: 4%;
 }
 
-#principles p{
-    text-align: justify;
+.principles-1 img {
+  height: 25vh;
+  margin-bottom: 3%;
 }
 
-button{
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-
+#principles p {
+  text-align: justify;
 }
 
-#header button{
-    margin-top:4%;
-    background-color: #FB8500 ;
-    color: white;
-
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
 }
 
-.header-text h1{
-    color:white;
-    font-size: 4vw;
-}
-.header-text h2{
-    color:white;
-    font-weight: bolder;
-    font-size: 1.5vw;
-    margin-top:2%;
-}
-.header-text{
-    margin-top:6%;
-}
-.header-text h3{
-    margin-top:4%;
-    font-weight: lighter;
-    color:white;
-    font-size: 1.8vw;
-    word-spacing: 0.5vw;
-    text-align: justify;
-    width:50%;
+#header button {
+  margin-top: 2%;
+  background-color: #fb8500;
+  color: white;
+  white-space: normal;
+  max-width: 100%;
 }
 
-.card{
-    float: none;
-    width:20rem;
-    height:100%;
-    margin: 0 auto;
-    box-shadow: 10px 10px 5px #ccc;
-    -moz-box-shadow: 10px 10px 5px #ccc;
-    -webkit-box-shadow: 10px 10px 5px #ccc;
-    -khtml-box-shadow: 10px 10px 5px #ccc;
+.header-text h1 {
+  font-family: Eras Demi ITC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(50px + 1.5vw);
+  line-height: 50px;
+
+  letter-spacing: -0.025em;
+  color: white;
+}
+.header-text h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(10px + 1vw);
+  line-height: 23px;
+  margin-top: 5%;
+
+  color: #ffffff;
+}
+.header-text {
+  margin-top: 6%;
+}
+.header-text h3 {
+  margin-top: 4%;
+  font-weight: lighter;
+  color: white;
+  font-size: 20px;
+  word-spacing: 0.5vw;
+  text-align: justify;
+  width: 50%;
 }
 
-
-#top-products{
-    padding:4%;
+.product-section img {
+  width: 23.28125vw;
+  height: 23.828125vw;
+  margin-bottom: 5%;
+  filter: drop-shadow(6px 5px 4px rgba(0, 0, 0, 0.15));
 }
 
-#top-products hr{
-    background:#FB8500;
-    width:60vw;
-    margin-bottom:5%;
-}
-#top-products button{
-margin-top:10vh;
-}
-.card-title{
-    color: #FB8500;
-}
-.section-header{
-    color:#FB8500;
-    /* font-weight: lighter; */
-}
-#principles h1{
-    margin-top:5%;
-    margin-bottom:4%;
-}
-.principle-title{
-    
-font-family: Roboto Condensed;
-font-style: normal;
-font-weight: bold;
-text-align:left;        
-font-size: 27px;
-line-height: 120%;
-/* or 23px */
-
-
-color: #FB8500;
-
-opacity: 0.7;
+#top-products {
+  padding: 4%;
 }
 
-footer{
-    background-image: url('../img/footer/halaman_utama.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-    
+#top-products hr {
+  background: #fb8500;
+  width: 60vw;
+  margin-bottom: 5%;
 }
 
-footer .content{
-    margin:0 auto;
-    width:50%;
-
-}
-footer h3, footer p{
-    font-family: Segoe UI;
-    font-style: normal;
-    color: #FFFFFF;
-    
+#top-products {
+  width: 80%;
 }
 
-footer p{
-    font-size: 18px;
+#top-products h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+}
+#top-products button {
+  margin-top: 5vh;
+  font-size: 16px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: -0.035em;
+
+  color: #ffffff;
+}
+.card-title {
+  color: #fb8500;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+}
+.card-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  height: auto;
+  line-height: 110%;
+  text-align: justify;
+  color: #000000;
+}
+.section-header {
+  color: #fb8500;
+  /* font-weight: lighter; */
+}
+#principles h1 {
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+.principle-title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+  font-size: 27px;
+  line-height: 120%;
+  /* or 23px */
+
+  color: #fb8500;
+
+  opacity: 0.7;
 }
 
-#left-footer{
-    
-}
-#left-footer h3{
-    text-decoration-line: underline;
-
+#principles p {
+  font-family: "Segoe UI", sans-serif;
 }
 
-footer h3{
-font-weight: 900;
-font-size: 18px;
-line-height: 149.8%;
-/* identical to box height, or 27px */
+.principles-2 .col-lg-4 {
+  display: flex;
+  flex-direction: column;
 }
 
-footer p{
-font-size: 18px;
-line-height: 107%;
-width:24.472243940578576vw;
+.principles-2 button {
+  width: 125.64px;
+  margin-top: auto;
 }
 
-#right-footer{
-    padding-top:7%;
-
+#principles img {
+  max-width: 100%;
+}
+#principles .row:nth-child(3) img {
+  min-width: 100%;
 }
 
- .link{
-    color:white;
-    text-decoration: underline;
+footer {
+  background-image: url("../img/footer/halaman_utama.png");
 }
 
-.media-section{
-width:50%;
-
-}
-
-.media-section .row:nth-child(1){
+/** for responsive purposes **/
+@media screen and (max-width: 768px) {
+  .header-text h3 {
+    font-size: 3vw;
+  }
+  #principles .button {
     margin-bottom: 5%;
+  }
+  .header-text {
+    margin-top: 0;
+  }
 }
 
-#right-footer img{
-    width:34px;
-    height: 34px;
-
+@media screen and (min-height: 1060px) {
+  .header-text {
+    margin-top: 10%;
+  }
+  .header-text h1 {
+    font-size: 8vw;
+  }
+  .header-text h2 {
+    font-size: 4vw;
+    line-height: 107%;
+  }
+  .header-text h3 {
+    font-size: 3vw;
+  }
+  header button {
+    font-size: 3vw;
+  }
 }
-
-.footnote{
-    color:white;
-    margin: auto;
-    margin-top:3%;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-}
-
